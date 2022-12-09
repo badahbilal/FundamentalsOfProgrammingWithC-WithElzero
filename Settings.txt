@@ -1,0 +1,34 @@
+
+>> Download Msys to use the package manager Pacman
+Download Msys 
+
+>> Synchronizing package databases
+pacman - Syu 
+
+>> Starting core system upgrade
+>> Starting full system upgrade...
+pacman - Su 
+
+>> Read about wat is 64Bit and 32Bit
+Go To 64Bit 
+
+>> Open MSYS2 MINGW 64 if your system support 64 64Bit
+>> bilal@RedCode MINGW64 ~
+
+>> Now We need insall the compiller  "GNU Compiler Collection (C,C++,OpenMP) for MinGW-w64"
+>> Write in MSYS2 MINGW 64 Terminal these commands
+pacman -Ss gcc 
+pacman -S mingw-w64-x86_64-gcc
+
+>> Then we need install the Debugger "GNU Debugger (mingw-w64)"
+>> we choose mingw-w64-x86_64-gdb 
+pacman -Ss gdb 
+pacman -S mingw-w64-x86_64-gdb 
+
+>> Check Versions 
+gcc --version
+g++ --version 
+gdb --version
+
+>> Add this line to Environment Variables if you wanna use normal Terminal
+C:\msys64\mingw64\bin
